@@ -8,7 +8,7 @@ Usage example
 
 ```HCL
 module "queue" {
-  source  = "Aplyca/s3/aws"
+  source  = "Aplyca/sqs/aws"
 
   name    = "MyQueue"
   description = "My SQS AWS Queue"
