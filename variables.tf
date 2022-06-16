@@ -14,7 +14,7 @@ variable "wait_time" {
 }
 
 variable "tags" {
-  type        = "map"
+  type        = map
   default     = {}
   description = "Additional tags (e.g. map('BusinessUnit`,`XYZ`)"
 }
@@ -26,7 +26,7 @@ variable "recieve_permissions" {
     "sqs:GetQueueAttributes"
   ]
 
-  type        = "list"
+  type        = list
   description = "Recieve permissions granted to assumed role"
 }
 
@@ -38,7 +38,7 @@ variable "send_permissions" {
     "sqs:SetQueueAttributes"
   ]
 
-  type        = "list"
+  type        = list
   description = "Send permissions granted to assumed role"
 }
 
